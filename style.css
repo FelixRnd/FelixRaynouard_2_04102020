@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-VariableFont_wght.ttf') format('truetype'),
+    url('font/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+    url('font/static/Raleway-Thin.ttf') format('truetype'),
+    url('font/static/Raleway-ExtraLight.ttf') format('truetype'),
+    url('font/static/Raleway-Light.ttf') format('truetype'),
+    url('font/static/Raleway-Regular.ttf') format('truetype'),
+    url('font/static/Raleway-Medium.ttf') format('truetype'),
+    url('font/static/Raleway-SemiBold.ttf') format('truetype'),
+    url('font/static/Raleway-Bold.ttf') format('truetype'),
+    url('font/static/Raleway-ExtraBold.ttf') format('truetype'),
+    url('font/static/Raleway-Black.ttf') format('truetype'),
+    url('font/static/Raleway-ThinItalic.ttf') format('truetype'),
+    url('font/static/Raleway-ExtraLightItalic.ttf') format('truetype'),
+    url('font/static/Raleway-LightItalic.ttf') format('truetype'),
+    url('font/static/Raleway-Italic.ttf') format('truetype'),
+    url('font/static/Raleway-MediumItalic.ttf') format('truetype'),
+    url('font/static/Raleway-SemiBoldItalic.ttf') format('truetype'),
+    url('font/static/Raleway-BoldItalic.ttf') format('truetype'),
+    url('font/static/Raleway-ExtraBoldItalic.ttf') format('truetype'),
+    url('font/static/Raleway-BlackItalic.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 2em;
+}
+
+.container {
+    margin: 2%;
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        font-size: 2em;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        color: #0065FC;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    #heberg {
+        margin-left: 150px;
+        order: 1;
+        margin-top: 100px;
+    }
+    #activ {
+        order: 1;
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    #sinscr {
+        order:0;
+        margin-left: 500px;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        color: #0065FC;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    #heberg {
+        margin-left: 500px;
+        order: 0;
+        margin-top: 2%;
+    }
+    #activ {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+    #sinscr {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        color: #0065FC;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    #heberg {
+        margin-left: 700px;
+        order: 0;
+        margin-top: 2%;
+    }
+    #activ {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+    #sinscr {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        color: #0065FC;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    #heberg {
+        margin-left: 900px;
+        order: 0;
+        margin-top: 2%;
+    }
+    #activ {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+    #sinscr {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        color: #0065FC;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    #heberg {
+        margin-left: 1500px;
+        order: 0;
+        margin-top: 2%;
+    }
+    #activ {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+    #sinscr {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+
+}
