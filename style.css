@@ -24,11 +24,187 @@
 
 body {
     font-family: 'Raleway';
-    font-size: 2em;
 }
 
 .container {
     margin: 2%;
+}
+
+input::-webkit-input-placeholder {
+    font-weight: bold;
+    color: black;
+}
+input:-moz-placeholder { /* Firefox 18- */
+        font-weight: bold;
+        color: black;
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+        font-weight: bold; 
+        color: black;
+}
+input:-ms-input-placeholder { 
+    font-weight: bold;
+    color: black;
+}
+
+/* Titre */
+
+.titre {
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 1.2em;
+}
+
+/* Barre de recherche */
+
+.localisation {
+    margin-top:0;
+    display: flex;
+}
+.location {
+    background-color: #F2F2F2;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    padding-top: 13px;
+    margin: 0;
+    border-radius: 10px 0px 0px 10px;
+    color: black;
+}
+#ville {
+    width: 150px;
+    height: 34px;
+    border: 1px solid #F2F2F2;
+}
+#rechercher {
+    background-color: #0065FC;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* Filtres */
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 600px;
+}
+
+.categorie {
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+}
+
+.cate {
+    background:#DEEBFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #0065FC;
+}
+
+/* Plus de 500 logements sont disponibles dans cette ville */
+
+.info {
+    display: flex;
+}
+
+.icon {
+    color: #0065FC;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 8px;
+    padding-top: 3px;
+}
+
+/* Hébregement à -ville- et le plus populaires  */
+
+.catalogue {
+    display: flex;
+}
+
+.heberg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 750px;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+
+}
+
+.container2 {
+    font-size: 1.2em;
+    width: 100%;
+    display: flex;
+    margin: 4%
+}
+
+.heberg-list {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 1%;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px gray;
+    background-color: white;
+    height: 225px;
+}
+
+.heberg-list_img {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+    margin: 2px;
+}
+
+.legende {
+    margin-left: 4%;
+}
+
+.heberg-list_titre {
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+
+.heberg-list_description {
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.starblack {
+    font-size: 9px;
+    color: #0065FC;
+}
+
+.starwhite {
+    font-size: 9px;
+    background-color: #F2F2F2;
+}
+
+span {
+    font-weight: bold;
+}
+
+.populaire {
+    width: 25%;
 }
 
 @media screen and (min-width: 320px) {
@@ -160,7 +336,44 @@ body {
     }
 
     #heberg {
-        margin-left: 900px;
+        margin-left: 1000px;
+        order: 0;
+        margin-top: 2%;
+    }
+    #activ {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+    #sinscr {
+        order: 0;
+        margin-left: 25px;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+    body {
+        font-size: 1em;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        color: #0065FC;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    #heberg {
+        margin-left: 1300px;
         order: 0;
         margin-top: 2%;
     }
