@@ -81,6 +81,7 @@ display: flex;
 display: flex;
 border: 2px solid #F2F2F2;
 background-color: white;
+border-radius: 50px;
 }
 
 .categorie_logo {
@@ -98,12 +99,17 @@ display: flex;
 .icon {
 color: #0065FC;
 border: 2px solid #F2F2F2;
+border-radius: 50%;
 }
 
 /* Hébregement à Marseille  */
 
 .catalogue {
 display: flex;
+}
+
+.heberg {
+    border-radius: 20px;
 }
 
 .heberg-list {
@@ -133,6 +139,7 @@ font-weight: bold;
 .populaire {
 display: flex;
 background-color:  #F2F2F2;
+border-radius: 20px;    
 }
 
 .populaire-list {
@@ -428,6 +435,15 @@ footer {
         font-size: 1em;
     }
 
+    h2 {
+        margin: 4%;
+    }
+
+    h5 {
+        font-weight: 500;
+        font-size: 2em;
+    }
+
     /* En tête */
 
     header {
@@ -501,7 +517,7 @@ footer {
     height: 50px;
     font-size: 1em;
     margin-bottom: 15px;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .categorie_logo {
@@ -540,12 +556,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 25px;
     margin-right: 25px;
     background-color: #F2F2F2;
-    height: 750px;
-    width: 3500px;
+    height: 600px;
+    width: 2300px;
 }
 
 .sous-titre {
@@ -560,17 +574,17 @@ footer {
 }
 
 .heberg-list {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 10px;
-    margin-top: 100px;
-    height: 175px;
+    margin-top: 25px;
+    height: 160px;
     border-radius: 20px 20px 20px 20px;
 }
 
 .heberg-list_img {
-    width: 175px;
-    height: 75px;
+    width: 170px;
+    height: 85px;
     margin: 2px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -584,6 +598,7 @@ footer {
     font-size: 1em;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 0px;
     font-weight: bold;
 }
 
@@ -607,23 +622,28 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 750px;
+    height: 600px;
     width: 1000px;
-    padding-bottom: 25px;
     margin-right: 0px;
 }
 
+#pop {
+    padding-top: 15px;
+    padding-left: 4%;
+}
+
 .populaire-list {
-    margin-bottom: 10px;
-    height: 155px;
+    height: 115px;
     border-radius: 20px 20px 20px 20px;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .populaire-list_img {
-    width: 150px;
-    height: 150px;
-    margin: 2px;
-    border-radius: 20px 0px 0px 20px;
+    width: 100px;
+    height: 110px;
+    margin: 3px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .legende {
@@ -632,15 +652,16 @@ footer {
 
 .populaire-list_titre {
     font-size: 1em;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    margin-left: 0px;
     font-weight: bold;
 }
 
 .populaire-list_description {
     font-size: 1em;
     margin-top: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 /* Activités */
@@ -649,22 +670,41 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin: 4%;
+}
+
+.activites_order {
+    display: flex;
 }
 
 .activites-list {
     margin-right: 4%;
     margin-left: 4%;
-    height: 55px;
 }
 
-.activites-list_img {
-    width: 800px;
-    height: 350px;
-    margin: 2px;
+#actv1 {
+    width: 100px;
+    height: 100px;
+}
+#actv2 {
+    width: 100px;
+    height: 100px;
+}
+#actv3 {
+    width: 100px;
+    height: 100px;
+}
+#actv4 {
+    width: 100px;
+    height: 100px;
+}
+#actv5 {
+    width: 100px;
+    height: 100px;
+}
+#actv6 {
+    width: 100px;
+    height: 100px;
 }
 
 .legende {
@@ -673,15 +713,15 @@ footer {
 
 .activites-list_titre {
     font-size: 1em;
-    margin-top: 75px;
+    margin-top: 25px;
     margin-left: 25px;
 }
 
 /* Pied de page */
 
 footer {
-    flex-direction: column;
-    font-size: 0.6em;
+    flex-direction: row;
+    font-size: 1em;
     width: 110%;
 }
 
