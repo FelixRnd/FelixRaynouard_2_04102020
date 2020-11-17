@@ -11,10 +11,9 @@
 
     <header class="container">
         <img class="logo" src="images/logo/Reservia.svg">
-        <a href="" id="heberg">Hébergements</a>
-        <a href="" id="activ">Activités</a>
+        <a href="#hergements" id="heberg">Hébergements</a>
+        <a href="#activites" id="activ">Activités</a>
         <a href="" id="sinscr"><span>S'inscrire</span></a>
-
     </header>
 
     <div class="titre container">
@@ -25,40 +24,41 @@
     <div class="localisation container">
         <i class="fas location fa-map-marker-alt"></i>
         <input type="text" name="ville" id="ville" placeholder="    Marseille, France">
-        <span class="rechercher"><i class="fas fa-search"></i></span>
+        <span class="rechercher"><a href="" id="rechercher_bouton">Rechercher</a></i></span>
     </div>
 
-    <div class="filtres container">
-        <div><p>Filtres</p></div>
-            <button class="categorie">
-                <span class="cate"><i class="fas fa-money-bill-wave"></i></span>
-                <p>Economie</p>
-            </button>
-            <button class="categorie">
-                <i class="fas cate fa-money-bill-wave"></i>
-                <p>Familial</p>
-            </button>
-            <button class="categorie">
-                <i class="fas cate fa-money-bill-wave"></i>
-                <p>Romantique</p>
-            </button>
-            <button class="categorie">
-                <i class="fas cate fa-money-bill-wave"></i>
-                <p>Animaux autorisés</p>
-            </button>
-        </div>
-    </div>
+    <section class="filtres container">
+        <div class="filtres_titre"><h4>Filtres</h4></div>
+            <div class="categorie">
+                <i class="fas categorie_logo fa-money-bill-wave"></i>
+                <div class="categorie_titre"><span>Economie</span></div>
+            </div>
+            <div class="categorie">
+                <i class="fas categorie_logo fa-money-bill-wave"></i>
+                <div class="categorie_titre"><span>Familial</span></div>
+            </div>
+            <div class="categorie">
+                <i class="fas categorie_logo fa-money-bill-wave"></i>
+                <div class="categorie_titre"><span>Romantique</span></div>
+            </div>
+            <div class="categorie">
+                <i class="fas categorie_logo fa-money-bill-wave"></i>
+                <div class="categorie_titre"><span>Animaux autorisés</span></div>
+            </div>
+    </section>
 
     <div class="container info">
     <i class="fas icon fa-info"></i>
     <p> Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
-    <div class="catalogue">
+    <div class="catalogue container">
 
         <section class="heberg">
 
-            <h2 class="sous-titre">Hébergements à Marseille</h2>
+            <h2 class="sous-titre" id="hergements">Hébergements à Marseille</h2>
+
+            <div class="heberg-order">
             <article class="heberg-list">
                 <div>
                     <img class="heberg-list_img" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
@@ -143,13 +143,14 @@
                 <i class="fas starblack fa-star"></i>
             </div>
             </article>
-            <p class="container2"><span>Afficher plus</span></p>
+            </div>
+            <p class="container"><span>Afficher plus</span></p>
 
         </section>
 
         <section class="populaire">
 
-            <h2 class="soustitre2">Les plus populaires</h2>
+            <h2 class="sous-titre container">Les plus populaires</h2>
             <article class="populaire-list">
                 <div>
                     <img class="populaire-list_img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
@@ -199,7 +200,7 @@
     <section class="activites">
         <div class="container">
 
-        <h2 class="soustitre2">Activités Marseille</h2>
+        <h2 class="sous-titre container" id="activites">Activités Marseille</h2>
         <article class="activites-list">
             <div>
                 <img class="activites-list_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
@@ -252,8 +253,7 @@
     </section>
 
     <footer>
-        <div class="container">
-        <div class="apropos">
+        <div class="apropos container">
         <h3><span>A propos</span></h3>
         <p>Fonctionnement du site</p>
         <p>Conditions générales de vente</p>
@@ -268,7 +268,6 @@
         <h3><span>Assistance</span></h3>
         <p>Centre d'aide</p>
         <p>Nous contacter</p>
-        </div>
         </div>
     </footer>
 
