@@ -42,8 +42,7 @@ header {
     color: #0065FC;
 }
   /* Titres */
-
-.titre {
+ .titre {
     display: flex;
 }
 
@@ -220,6 +219,11 @@ background-color: #F2F2F2;
         font-weight: 500;
     }
 
+    h5 {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
     /* Barre de recherche */
 
 .localisation {
@@ -230,6 +234,7 @@ background-color: #F2F2F2;
     height: 75px;
     text-align: center;
     padding-top: 40px;
+    border-radius: 20px 0px 0px 20px;
 }
 #ville {
     width: 100%;
@@ -239,8 +244,9 @@ background-color: #F2F2F2;
 .rechercher {
     text-align: center;
     padding-top: 35px;
-    width: 150px;
+    width: 400px;
     height: 80px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 /* Filtres */
@@ -284,6 +290,7 @@ background-color: #F2F2F2;
 
 .catalogue {
     flex-direction: column-reverse;
+    margin-left: 0;
 }
 
 .heberg {
@@ -293,12 +300,14 @@ background-color: #F2F2F2;
     height: 3000px;
     padding-top: 75px;
     padding-bottom: 75px;
+    margin-left: 4%;
 }
 
 .sous-titre {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 100px;
+    margin-left: 4%;
 }
 
 .heberg-list {
@@ -345,14 +354,16 @@ background-color: #F2F2F2;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 120%;
     height: 1550px;
     padding-top: 75px;
     padding-bottom: 75px;
+    margin-left: 0;
 }
 
 .populaire-list {
     margin-right: 2%;
-    margin-left: 2%;
+    margin-left: 4%;
     margin-bottom: 0px;
     height: 400px;
     width: 1000px;
@@ -395,14 +406,17 @@ background-color: #F2F2F2;
 
 .activites-list {
     margin-right: 4%;
-    margin-left: 4%;
-    height: 550px;
+    margin-bottom: 100px;
+    width: 930px;
+    height: 525px;
+    box-shadow: 0px 0px 20px rgb(209, 209, 209);
+    border-radius: 30px 30px 30px 30px;
 }
 
 .activites-list_img {
-    width: 800px;
-    height: 350px;
-    margin: 2px;
+    width: 930px;
+    height: 370px;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .legende {
@@ -548,10 +562,6 @@ footer {
     flex-direction: row;
 }
 
-#hergements {
-
-}
-
 .heberg {
     flex-direction: row;
     justify-content: space-between;
@@ -666,68 +676,48 @@ footer {
 
 /* Activités */
 
-.activites {
+.activite {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 4%;
 }
 
-.activites_order {
+.activite-groupe {
     display: flex;
+    justify-content: space-between;
 }
 
-.activites-list {
-    margin-right: 4%;
-    margin-left: 4%;
+.activite-grand {
+    width: 250px;
+    font-size: 0.8em;
 }
 
-#actv1 {
-    width: 100px;
+.activites-petit {
+    
+}
+
+.activite-grand-img {
+    width: 200px;
+    height: 85%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.activite-petit1-img {
+    width: 200px;
+    height: 125px;
+    margin-left: 0;
+}
+.activite-petit2-img {
+    width: 200px;
     height: 100px;
 }
-#actv2 {
-    width: 100px;
-    height: 100px;
+.activite-petit3-img {
+    width: 200px;
+    height: 120px;
 }
-#actv3 {
-    width: 100px;
-    height: 100px;
-}
-#actv4 {
-    width: 100px;
-    height: 100px;
-}
-#actv5 {
-    width: 100px;
-    height: 100px;
-}
-#actv6 {
-    width: 100px;
-    height: 100px;
-}
-
-.legende {
-    margin-left: 4%;
-}
-
-.activites-list_titre {
-    font-size: 1em;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-/* Pied de page */
-
-footer {
-    flex-direction: row;
-    font-size: 1em;
-    width: 110%;
-}
-
-.apropos {
-    margin: 4%;
-    padding: 2%;
+.activite-petit4-img {
+    width: 200px;
+    height: 120px;
 }
 
 }
