@@ -24,6 +24,9 @@
 
 body {
     font-family: 'Raleway';
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a {
@@ -175,7 +178,362 @@ background-color: #F2F2F2;
 justify-content: space-between;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 601px) {
+
+    body {
+        font-size: 0.7rem;
+    }
+
+    /* En tête */
+
+    header {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    #heberg {
+        width: 50%;
+        order: 1;
+        margin-top: 10%;
+        border-bottom: 2px solid #0065FC;
+    }
+    #activ {
+        width: 50%;
+        order: 1;
+        margin-top: 10%;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    #sinscr {
+        order: 0;
+        margin-left: 40%;
+        padding-top: 2%;
+    }
+
+      /* Titres */
+
+    .titre {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    h6 {
+        font-size: 1.2em;
+    }
+
+    /* Barre de recherche */
+
+.localisation {
+    margin-top:0;
+}
+.location {
+    width: 20%;
+    height: 35px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+}
+#ville {
+    width: 100%;
+    height: 50px;
+    font-size: 0.8rem;
+}
+.rechercher {
+    text-align: center;
+    width: 25%;
+    height: 35px;
+    padding-top: 20px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Filtres */
+
+.filtres {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.categorie {
+    width: 40%;
+    height: 25px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-right: 500px;
+    border: 2px solid #F2F2F2;
+}
+
+.categorie_logo {
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 10%;
+    height: 25px;
+}
+
+.categorie_titre {
+    margin: auto;
+}
+
+/* Plus de 500 logements sont disponibles dans cette ville */
+
+.icon {
+    width: 5%;
+    height: 15px;
+    text-align: center;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.info {
+    font-size: 0.8em;
+}
+
+/* Hébregement à -ville- et le plus populaires  */
+
+.catalogue {
+    flex-direction: column-reverse;
+    margin-left: 0;
+}
+
+.heberg {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 2250px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-left: 4%;
+}
+
+.sous-titre {
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+.heberg-list {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.heberg-list_img {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+
+.legende {
+    margin-left: 4%;
+}
+
+.heberg-list_titre {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.heberg-list_description {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.starblack {
+    font-size: 15px;
+}
+
+.starwhite {
+    font-size: 15px;
+}
+
+/* Les plus populaire */
+
+.populaire {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 105%;
+    height: 1000px;
+    margin-left: 0;
+}
+
+.populaire_titre {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stonk {
+    margin: 4%;
+}
+
+.populaire-list {
+    margin-right: 2%;
+    margin-left: 4%;
+    height: 250px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+}
+
+.populaire-list_img {
+    width: 80%;
+    height: 225px;
+    margin: 2px;
+    padding: 3%;
+    border-radius: 35px 0px 0px 35px;
+    object-fit: cover;
+}
+
+.legende {
+    margin-left: 4%;
+}
+
+.populaire-list_titre {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.populaire-list_description {
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+/* Activités */
+
+.activite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+h3 {
+    font-size: 0.8em;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.activite-groupe {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4%;
+}
+
+.activite-grand {
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activite-grand-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+.activite-petit1 {
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activite-petit1-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+.activite-petit2 {
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activite-petit2-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+.activite-petit3 {
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activite-petit3-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+.activite-petit4 {
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(192, 192, 192);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activite-petit4-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+/* Pied de page */
+
+footer {
+    flex-direction: column;
+    width: 115%;
+}
+
+.apropos {
+    margin: 4%;
+    padding: 2%;
+}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
 
     body {
         font-size: 2.5em;
@@ -187,31 +545,28 @@ justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
-        width: 110%;
         text-align: center;
     }
 
     .logo {
-        width: 250px;
+        width: 35%;
     }
 
     #heberg {
-        width: 570px;
+        width: 50%;
         order: 1;
         margin-top: 75px;
         border-bottom: 4px solid #0065FC;
-        margin-left: -90px;
     }
     #activ {
-        width: 570px;
+        width: 50%;
         order: 1;
         margin-top: 75px;
         border-bottom: 4px solid #F2F2F2;
-        margin-left: -10px;
     }
     #sinscr {
         order: 0;
-        margin-left: 400px;
+        margin-left: 30%;
         margin-top: 50px;
     }
 
@@ -329,14 +684,13 @@ justify-content: space-between;
     margin-right: 4%;
     margin-left: 4%;
     margin-bottom: 100px;
-    width: 900px;
     height: 525px;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
     border-radius: 30px 30px 30px 30px;
 }
 
 .heberg-list_img {
-    width: 900px;
+    width: 100%;
     height: 325px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
@@ -373,7 +727,7 @@ justify-content: space-between;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 120%;
+    width: 105%;
     height: 1550px;
     padding-top: 75px;
     padding-bottom: 75px;
@@ -401,7 +755,7 @@ justify-content: space-between;
 }
 
 .populaire-list_img {
-    width: 400px;
+    width: 375px;
     height: 340px;
     margin: 2px;
     padding: 3%;
@@ -414,8 +768,7 @@ justify-content: space-between;
 }
 
 .populaire-list_titre {
-    font-size: 1em;
-    margin-top: 100px;
+    font-size: 0.9em;
     margin-bottom: 25px;
     font-weight: bold;
 }
@@ -450,7 +803,7 @@ h3 {
 
 .activite-grand {
     height: 425px;
-    width: 900px;
+    width: 100%;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
     border-radius: 30px;
     margin-bottom: 100px;
@@ -460,14 +813,14 @@ h3 {
 }
 
 .activite-grand-img {
-    width: 900px;
+    width: 100%;
     height: 300px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit1 {
     height: 425px;
-    width: 900px;
+    width: 100%;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
     border-radius: 30px;
     margin-bottom: 100px;
@@ -476,14 +829,14 @@ h3 {
     justify-content: space-between;
 }
 .activite-petit1-img {
-    width: 900px;
+    width: 100%;
     height: 300px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit2 {
     height: 425px;
-    width: 900px;
+    width: 100%;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
     border-radius: 30px;
     margin-bottom: 100px;
@@ -492,14 +845,14 @@ h3 {
     justify-content: space-between;
 }
 .activite-petit2-img {
-    width: 900px;
+    width: 100%;
     height: 300px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit3 {
     height: 425px;
-    width: 900px;
+    width: 100%;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
     border-radius: 30px;
     margin-bottom: 100px;
@@ -508,14 +861,14 @@ h3 {
     justify-content: space-between;
 }
 .activite-petit3-img {
-    width: 900px;
+    width: 100%;
     height: 300px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit4 {
     height: 425px;
-    width: 900px;
+    width: 100%;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
     border-radius: 30px;
     margin-bottom: 100px;
@@ -524,7 +877,7 @@ h3 {
     justify-content: space-between;
 }
 .activite-petit4-img {
-    width: 900px;
+    width: 100%;
     height: 300px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
@@ -560,20 +913,14 @@ footer {
 
     /* En tête */
 
-    header {
-        width: 1000px;
-    }
-
     .logo {
         width: 100px;
     }
 
     #heberg {
-        margin-left: 540px;
+        margin-left: 55%;
+        margin-top: 2%;
         order: 0;
-        margin-top: -40px;
-        padding-top: 58px;
-        border-top: 1px solid #0065FC;
     }
     #activ {
         order: 0;
@@ -692,12 +1039,13 @@ footer {
     margin-right: 2%;
     margin-bottom: 10px;
     margin-top: 25px;
+    width: 25%;
     height: 160px;
     border-radius: 20px 20px 20px 20px;
 }
 
 .heberg-list_img {
-    width: 160px;
+    width: 100%;
     height: 85px;
     margin: 2px;
     border-radius: 20px 20px 0px 0px;
@@ -813,7 +1161,7 @@ h3 {
 }
 
 .activite-grand {
-    width: 180px;
+    width: 100%;
     margin-right: 50px;
     font-size: 0.8em;
     border-radius: 30px;
@@ -824,17 +1172,18 @@ h3 {
 }
 
 .activite-grand-img {
-    width: 180px;
+    width: 100%;
     height: 300px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit1 {
     border-radius: 30px;
+    width: 75%;
     box-shadow: 0px 0px 10px rgb(177, 177, 177);
 }
 .activite-petit1-img {
-    width: 200px;
+    width: 100%;
     height: 120px;
     margin-left: 0;
     border-radius: 30px 30px 0px 0px;
@@ -842,377 +1191,33 @@ h3 {
 }
 .activite-petit2 {
     border-radius: 30px;
+    width: 75%;
     box-shadow: 0px 0px 10px rgb(177, 177, 177);
 }
 .activite-petit2-img {
-    width: 200px;
+    width: 100%;
     height: 100px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit3 {
     border-radius: 30px;
+    width: 75%;
     box-shadow: 0px 0px 10px rgb(177, 177, 177);
 }
 .activite-petit3-img {
-    width: 200px;
+    width: 100%;
     height: 110px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activite-petit4 {
     border-radius: 30px;
+    width: 75%;
     box-shadow: 0px 0px 10px rgb(177, 177, 177);
 }
 .activite-petit4-img {
-    width: 200px;
-    height: 120px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-
-/* Pied de page */
-
-footer {
-    flex-direction: row;
-    width: 103%;
-    height: 250px;
-}
-
-.apropos {
-    margin: 4%;
-    width: 200px;
-}
-
-h6 {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-}
-
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 0.8em;
-    }
-
-    h2 {
-        font-weight: normal;
-    }
-
-    h5 {
-        font-weight: 500;
-        font-size: 2em;
-    }
-
-    /* En tête */
-
-    header {
-        width: 1000px;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    #heberg {
-        margin-left: 735px;
-        order: 0;
-        margin-top: -40px;
-        padding-top: 58px;
-        border-top: 1px solid #0065FC;
-    }
-    #activ {
-        order: 0;
-        margin-left: 75px;
-        margin-top: 2%;
-    }
-    #sinscr {
-        order: 0;
-        margin-left: 75px;
-        margin-top: 2%;
-    }
-
-      /* Titres */
-
-    .titre {
-        flex-direction: column;
-        font-size: 0.5em;
-        margin-left: 4%;
-        height: 125px;
-    }
-
-
-    /* Barre de recherche */
-
-.localisation {
-    margin-top:0;
-}
-.location {
-    width: 50px;
-    height: 28px;
-    text-align: center;
-    padding-top: 18px;
-    border-radius: 15px 0px 0px 15px;
-}
-#ville {
-    height: 40px;
-    font-size: 1em;
-}
-.rechercher {
-
-    font-size: 1.1em;
-    text-align: center;
-    width: 120px;
-    height: 32px;
-    padding-top: 13px;
-    border-radius: 0px 15px 15px 0px;
-}
-/* Filtres */
-
-.filtres_titre {
-    margin-right: 25px;
-}
-
-.categorie {
-    width: 165px;
-    height: 35px;
-    font-size: 1em;
-    margin-bottom: 15px;
-    margin-right: 10px;
-}
-
-.categorie_logo {
-    padding-top: 10px;
-    padding-left: 9px;
-    width: 25px;
-    height: 25px;
-}
-
-.categorie_titre {
-    margin: auto;
-}
-
-/* Plus de 500 logements sont disponibles dans cette ville */
-
-.icon {
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    margin-top: 8px;
-    margin-right: 15px;
-    padding-top: 5px;
-}
-
-/* Hébregement à Marseille */
-
-.catalogue {
-    flex-direction: row;
-}
-
-.heberg {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: 25px;
-    background-color: #F2F2F2;
-    height: 550px;
-    width: 2300px;
-}
-
-.sous-titre {
-    font-size: 1em;
-    font-weight: bold;
-    height: 15px;
-    margin-left: 25px;
-    margin-top: 25px;
-}
-
-.heberg-order {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.heberg-list {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    margin-top: 25px;
-    height: 180px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.heberg-list_img {
-    width: 190px;
-    height: 105px;
-    margin: 2px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-
-.legende {
-    margin-left: 4%;
-    font-size: 0.8em;
-}
-
-.heberg-list_titre {
-    font-size: 1em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.heberg-list_description {
-    font-size: 1em;
-    margin-top: 7px;
-    margin-bottom: 5px;
-}
-
-.starblack {
-    font-size: 10px;
-}
-
-.starwhite {
-    font-size: 10px;
-}
-
-/* Les plus populaire */
-
-.populaire {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 550px;
-    width: 1000px;
-    margin-right: 0px;
-}
-
-.populaire_titre {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-}
-
-.stonk {
-    margin-top: 25px;
-    margin-right: 25px;
-}
-
-.populaire-list {
-    width: 280px;
-    height: 135px;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.populaire-list_img {
-    width: 120px;
-    height: 130px;
-    margin: 3px;
-    border-radius: 10px 0px 0px 10px;
-    object-fit: cover;
-}
-
-.legende {
-    margin-left: 4%;
-}
-
-.populaire-list_titre {
-    font-size: 1em;
-    margin-top: 15px;
-    margin-bottom: 7px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.populaire-list_description {
-    font-size: 1em;
-    margin-top: 2px;
-    margin-bottom: 25px;
-}
-
-/* Activités */
-
-.activite {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-h3 {
-    font-size: 0.8em;
-    margin-left: 10px;
-    padding-bottom: 10px;
-}
-
-.activite-groupe {
-    display: flex;
-    justify-content: space-between;
-}
-
-.activite-petit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.activite-grand {
-    width: 230px;
-    margin-right: 50px;
-    font-size: 0.8em;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.activite-grand-img {
-    width: 230px;
-    height: 330px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit1 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit1-img {
-    width: 230px;
-    height: 130px;
-    margin-left: 0;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit2 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit2-img {
-    width: 230px;
-    height: 120px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit3 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit3-img {
-    width: 230px;
-    height: 130px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit4 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit4-img {
-    width: 230px;
     height: 120px;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
@@ -1238,689 +1243,3 @@ h6 {
 
 }
 
-@media screen and (min-width: 1440px) {
-    body {
-        font-size: 1em;
-    }
-
-    h2 {
-        font-weight: normal;
-    }
-
-    h5 {
-        font-weight: 500;
-        font-size: 2em;
-    }
-
-    /* En tête */
-
-    header {
-        width: 1000px;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    #heberg {
-        margin-left: 900px;
-        order: 0;
-        margin-top: 2%;
-        margin-top: -57px;
-        padding-top: 75px;
-        border-top: 2px solid #0065FC;
-        }
-    
-    #activ {
-        order: 0;
-        margin-left: 75px;
-        margin-top: 2%;
-    }
-    #sinscr {
-        order: 0;
-        margin-left: 75px;
-        margin-top: 2%;
-    }
-
-      /* Titres */
-
-    .titre {
-        flex-direction: column;
-        font-size: 0.5em;
-        margin-left: 4%;
-        height: 125px;
-    }
-
-
-    /* Barre de recherche */
-
-.localisation {
-    margin-top:0;
-}
-.location {
-    width: 50px;
-    height: 28px;
-    text-align: center;
-    padding-top: 18px;
-    border-radius: 15px 0px 0px 15px;
-}
-#ville {
-    height: 40px;
-    font-size: 1em;
-}
-.rechercher {
-
-    font-size: 1.1em;
-    text-align: center;
-    width: 120px;
-    height: 32px;
-    padding-top: 13px;
-    border-radius: 0px 15px 15px 0px;
-}
-/* Filtres */
-
-.filtres {
-    height: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.filtres_titre {
-    margin-right: 25px;
-}
-
-.categorie {
-    width: 185px;
-    height: 35px;
-    margin-top: 10px;
-}
-
-.categorie_logo {
-    padding-top: 10px;
-    padding-left: 9px;
-    width: 25px;
-    height: 25px;
-}
-
-.categorie_titre {
-    margin: auto;
-}
-
-/* Plus de 500 logements sont disponibles dans cette ville */
-
-.icon {
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    margin-top: 8px;
-    margin-right: 15px;
-    padding-top: 5px;
-}
-
-/* Hébregement à Marseille */
-
-.catalogue {
-    flex-direction: row;
-}
-
-.heberg {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: 25px;
-    background-color: #F2F2F2;
-    height: 575px;
-    width: 2300px;
-}
-
-.sous-titre {
-    font-size: 1em;
-    font-weight: bold;
-    height: 15px;
-    margin-left: 25px;
-    margin-top: 25px;
-}
-
-.heberg-order {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.heberg-list {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    margin-top: 25px;
-    height: 180px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.heberg-list_img {
-    width: 250px;
-    height: 100px;
-    margin: 2px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-
-.legende {
-    margin-left: 4%;
-    font-size: 0.8em;
-}
-
-.heberg-list_titre {
-    font-size: 1em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.heberg-list_description {
-    font-size: 1em;
-    margin-top: 7px;
-    margin-bottom: 5px;
-}
-
-.starblack {
-    font-size: 10px;
-}
-
-.starwhite {
-    font-size: 10px;
-}
-
-/* Les plus populaire */
-
-.populaire {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 575px;
-    width: 1000px;
-    margin-right: 0px;
-}
-
-.populaire_titre {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.stonk {
-    margin-top: 25px;
-    margin-right: 25px;
-}
-
-.populaire-list {
-    width: 350px;
-    height: 115px;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.populaire-list_img {
-    width: 165px;
-    height: 110px;
-    margin: 3px;
-    border-radius: 10px 0px 0px 10px;
-    object-fit: cover;
-}
-
-.legende {
-    margin-left: 4%;
-}
-
-.populaire-list_titre {
-    font-size: 1em;
-    margin-top: 15px;
-    margin-bottom: 7px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.populaire-list_description {
-    font-size: 1em;
-    margin-top: 2px;
-    margin-bottom: 25px;
-}
-
-/* Activités */
-
-.activite {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-h3 {
-    margin-left: 10px;
-    padding-bottom: 10px;
-}
-
-.activite-groupe {
-    display: flex;
-    justify-content: space-between;
-}
-
-.activite-grand {
-    width: 300px;
-    margin-right: 50px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.activite-grand-img {
-    width: 300px;
-    height: 400px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit1 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit1-img {
-    width: 285px;
-    height: 175px;
-    margin-left: 0;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit2 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit2-img {
-    width: 285px;
-    height: 175px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit3 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit3-img {
-    width: 285px;
-    height: 175px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit4 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit4-img {
-    width: 285px;
-    height: 175px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-
-/* Pied de page */
-
-footer {
-    flex-direction: row;
-    width: 103%;
-    height: 300px;
-}
-
-.apropos {
-    margin: 4%;
-    width: 200px;
-}
-
-h6 {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-}
-
-@media screen and (min-width: 2560px) {
-    body {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-weight: normal;
-    }
-
-    h5 {
-        font-weight: 500;
-        font-size: 2em;
-    }
-
-    /* En tête */
-
-    header {
-        width: 2450px;
-    }
-
-    .logo {
-        width: 250px;
-    }
-
-    #heberg {
-        margin-left: 1500px;
-        order: 0;
-        margin-top: 2%;
-        margin-top: -102px;
-        padding-top: 150px;
-        border-top: 3px solid #0065FC;
-        }
-    
-    #activ {
-        order: 0;
-        margin-left: 75px;
-        margin-top: 2%;
-    }
-    #sinscr {
-        order: 0;
-        margin-left: 75px;
-        margin-top: 2%;
-    }
-
-      /* Titres */
-
-    .titre {
-        flex-direction: column;
-        margin-left: 4%;
-        height: 125px;
-    }
-
-
-    /* Barre de recherche */
-
-.localisation {
-    margin-top:0;
-}
-.location {
-    width: 100px;
-    height: 56px;
-    text-align: center;
-    padding-top: 18px;
-    border-radius: 15px 0px 0px 15px;
-}
-#ville {
-    height: 70px;
-    font-size: 1em;
-}
-.rechercher {
-
-    font-size: 1.1em;
-    text-align: center;
-    width: 240px;
-    height: 64px;
-    padding-top: 13px;
-    border-radius: 0px 15px 15px 0px;
-}
-/* Filtres */
-
-.filtres {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.filtres_titre {
-    margin-right: 25px;
-}
-
-.categorie {
-    width: 350px;
-    height: 70px;
-    margin-top: 25px;
-}
-
-.categorie_logo {
-    padding-top: 20px;
-    padding-left: 9px;
-    width: 50px;
-    height: 50px;
-}
-
-.categorie_titre {
-    margin: auto;
-}
-
-/* Plus de 500 logements sont disponibles dans cette ville */
-
-.icon {
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    margin-top: 25px;
-    margin-right: 15px;
-    padding-top: 5px;
-}
-
-/* Hébregement à Marseille */
-
-.catalogue {
-    flex-direction: row;
-}
-
-.heberg {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: 25px;
-    background-color: #F2F2F2;
-    height: 1050px;
-    width: 2300px;
-}
-
-.sous-titre {
-    font-size: 1em;
-    font-weight: bold;
-    height: 15px;
-    margin-left: 25px;
-    margin-top: 75px;
-    margin-bottom: 75px;
-}
-
-.heberg-order {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.heberg-list {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    margin-top: 25px;
-    height: 325px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.heberg-list_img {
-    width: 400px;
-    height: 200px;
-    margin: 2px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-
-.legende {
-    margin-left: 4%;
-    font-size: 0.8em;
-}
-
-.heberg-list_titre {
-    font-size: 1em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.heberg-list_description {
-    font-size: 1em;
-    margin-top: 7px;
-    margin-bottom: 5px;
-}
-
-.starblack {
-    font-size: 10px;
-}
-
-.starwhite {
-    font-size: 10px;
-}
-
-/* Les plus populaire */
-
-.populaire {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 1050px;
-    width: 1000px;
-    margin-right: 0px;
-}
-
-.populaire_titre {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-}
-
-.stonk {
-    margin-top: 25px;
-    margin-right: 25px;
-}
-
-.populaire-list {
-    width: 700px;
-    height: 225px;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.populaire-list_img {
-    width: 300px;
-    height: 220px;
-    margin: 3px;
-    border-radius: 10px 0px 0px 10px;
-    object-fit: cover;
-}
-
-.legende {
-    margin-left: 4%;
-}
-
-.populaire-list_titre {
-    font-size: 1em;
-    margin-top: 30px;
-    margin-bottom: 7px;
-    margin-left: 0px;
-    font-weight: bold;
-}
-
-.populaire-list_description {
-    font-size: 1em;
-    margin-top: 2px;
-    margin-bottom: 25px;
-}
-
-/* Activités */
-
-.activite {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-h3 {
-    margin-left: 10px;
-    padding-bottom: 10px;
-}
-
-.activite-groupe {
-    display: flex;
-    justify-content: space-between;
-}
-
-.activite-grand {
-    width: 600px;
-    margin-right: 50px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.activite-grand-img {
-    width: 600px;
-    height: 600px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit1 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit1-img {
-    width: 500px;
-    height: 250px;
-    margin-left: 0;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit2 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit2-img {
-    width: 500px;
-    height: 250px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit3 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit3-img {
-    width: 500px;
-    height: 250px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-.activite-petit4 {
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(177, 177, 177);
-}
-.activite-petit4-img {
-    width: 500px;
-    height: 250px;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: cover;
-}
-
-/* Pied de page */
-
-footer {
-    flex-direction: row;
-    width: 103%;
-    height: 650px;
-}
-
-.apropos {
-    margin: 4%;
-    width: 400px;
-}
-
-h6 {
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-}
