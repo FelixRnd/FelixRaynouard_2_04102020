@@ -221,12 +221,16 @@ justify-content: space-between;
         flex-wrap: wrap;
     }
 
+    h1 {
+        font-size: 1.2em;
+    }
+
     h2 {
         font-weight: 500;
     }
 
     h5 {
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: 500;
     }
 
@@ -388,14 +392,14 @@ justify-content: space-between;
 .populaire-list {
     margin-right: 2%;
     margin-left: 4%;
-    height: 250px;
+    height: 220px;
     width: 100%;
     box-shadow: 0px 0px 30px rgb(192, 192, 192);
 }
 
 .populaire-list_img {
-    width: 80%;
-    height: 225px;
+    width: 150px;
+    height: 200px;
     margin: 2px;
     padding: 3%;
     border-radius: 35px 0px 0px 35px;
